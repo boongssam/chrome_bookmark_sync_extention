@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "붕쌤 북마크 동기화",
+  "version": "0.2.0",
+  "description": "서로 다른 구글 계정(크롬 프로필)의 북마크바 전체를 구글 앱스 스크립트로 맞춰 줍니다.",
+  "permissions": ["bookmarks", "storage", "alarms"],
+  "host_permissions": [
+    "https://script.google.com/*",
+    "https://script.googleusercontent.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "북마크 동기화",
+    "default_popup": "popup.html"
+  }
+}
